@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quem é Esse Pokémon?</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+
+    <div class="score-container">
+      <p id="score">Placar: 0</p>
+    </div>
+  
+    <div class="pokedex">
+      <h1>Quem é esse Pokémon?</h1>
+  
+      <!-- Área onde o Pokémon será exibido com background branco -->
+      <div class="pokemon-container">
+        <img
+          id="pokemon-image"
+          src=""
+          alt="Quem é esse Pokémon?"
+          class="hidden"
+        />
+        <p id="loading" class="hidden">Carregando Pokémon...</p>
+      </div>
+  
+      <!-- Botões de escolha -->
+      <div class="options">
+        <button class="option" id="option1"></button>
+        <button class="option" id="option2"></button>
+        <button class="option" id="option3"></button>
+      </div>
+  
+      <!-- Mensagem de resultado -->
+      <p id="result"></p>
+  
+      <!-- Botão para resetar o jogo -->
+      <button id="reset-game">Resetar Jogo</button>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
