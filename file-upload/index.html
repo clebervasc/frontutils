@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>
+    Área de Upload de Arquivos
+  </title>
+  <link rel="stylesheet" href="./assets/style.css">
+</head>
+
+<body>
+  <form class="upload-container">
+    <h2>Carregar e anexar arquivos</h2>
+    <p>Clique para fazer o upload ou arraste e solte o arquivo aqui, e prepare seu Medabot para a batalha!</p>
+
+    <div class="upload-area">
+      <div class="upload-icon">
+        <img src="./assets/images/upload-cloud-icon.svg" alt="Ícone de upload de nuvem">
+      </div>
+      <input type="file" required id="file-upload" name="uploaded-file">
+      <p class="file-status">Nenhum arquivo selecionado</p>
+    </div>
+    <div class="upload-actions">
+      <button type="reset">
+        Cancelar
+      </button>
+      <button id="save-button" type="submit">
+        Salvar
+      </button>
+    </div>
+  </form>
+
+  <script src="./assets/script.js"></script>
+</body>
+
+</html>
